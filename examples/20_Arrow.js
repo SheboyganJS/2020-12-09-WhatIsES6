@@ -8,8 +8,9 @@ let hello = function(val) {
 }
 
 //Arrow Fn
-hello = () => "Hello World!";
-
+hello = () => {
+    "Hello World!"
+};
 
 //Even cleaner Arrow Fn
 hello = () => "Hello World!";
@@ -21,11 +22,11 @@ hello = (val) => "Hello " + val;
     What about this?
 */
 
-// hello = function() {
-//     console.log("This in Regular Fn");
-//     console.log(this);
-// }
-// hello(); //Notice how this is an object with global and other functions available
+hello = function() {
+    console.log("This in Regular Fn");
+    console.log(this);
+}
+hello(); //Notice how this is an object with global and other functions available
 
 hello = () => {
     console.log("This in Arrow Fn");
